@@ -1,0 +1,18 @@
+[package]
+name = "cxx_bindgen"
+version = "0.1.0"
+authors = ["Fabian Hummel <fabianhummel22501@gmail.com>"]
+description = "A macro for automatically generating C++ bindings for Rust code."
+keywords = ["ffi", "bindgen", "cxx"]
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[features]
+expand = []
+expand_dep = []
+
+[dependencies]
+quote = "1"
+syn = { version = "2.0", features = ["full"] }
